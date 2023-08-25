@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive web design</title>
+
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+    
+        .menu {
+          float: left;
+          width: 25%;
+          text-align: center;
+          font-family: monospace;
+          border: 1px solid #ccc; 
+        }
+    
+        .menu a {
+          background-color: #c4dfae;
+          padding: 8px;
+          margin-top: 7px;
+          display: block;
+          width: 100%;
+          color: rgb(105, 65, 15);
+        }
+    
+        .main {
+          width: 50%;
+          text-align: center;
+          border: 1px solid #ccc; 
+        }
+    
+        .right {
+          background-color: #c4dfae;
+          float: left;
+          width: 25%;
+          padding: 15px;
+          margin-top: 0px;
+          text-align: center;
+          font-family: monospace;
+          border: 1px solid #ccc; 
+          box-sizing: border-box;
+        }
+    
+        @media only screen and (max-width: 620px) {
+          /* For mobile phones: */
+          .menu, .main, .right {
+            width: 100%;
+            border: none;
+          }
+        }
+    </style>
+    
+    
+
+</head>
+<body>
+    <div style="background-color: rgb(207, 240, 217); margin: auto;">
+    <h1 style="font-size: 5vw; font-family: monospace; color: rgb(21, 143, 102); text-align:center;">Responsive Web Design</h1>
+    </div>
+    <h2 style="font-family: monospace; color: rgb(168, 106, 29); text-align: center; font-size: 2rem;"> Fixed size</h2>
+    
+    <div style="overflow: auto; display: flex; flex-wrap: wrap;">
+        <div class="menu">
+            <h2>Greetings</h2>
+            <a>Hello!</a>
+            <a>Nice</a>
+            <a>To</a>
+            <a>Meet</a>
+            <a>You</a>
+        </div>
+      
+        <div class="main">
+          <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+            <img src="image1.jpg" style="max-width: 100%; height: auto;">
+          </div>
+        </div>
+      
+        <div class="right">
+          <h2 style="text-decoration: underline;">About</h2>
+          <br>
+          <p style ="color: rgb(105, 65, 15)">This is on of the most basic but best implementation of Resposnive web design, the image, the menu and this div is constructed in a way to respond and change sixe with change in screen sizes across different devices.</p>
+        </div>
+      </div>
+      
+</body>
+</html>
